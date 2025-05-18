@@ -1,5 +1,5 @@
 import pytest
-from calculadora import soma, divisao, multiplicacao  # Adicionamos multiplicacao aqui
+from calculadora import soma, divisao, multiplicacao, subtracao
 
 # Testes de soma
 def test_soma():
@@ -23,3 +23,9 @@ def test_multiplicacao():
     assert multiplicacao(0, 10) == 0
     assert multiplicacao(-2, -3) == 6
 
+def test_subtracao():
+    assert subtracao(5, 3) == 2
+    assert subtracao(-1, -2) == 1
+    assert subtracao(-1, 8) == -9
+    assert subtracao(2, -4) == 6
+    assert subtracao(2, 7) == -5
